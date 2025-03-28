@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const openAI_key = import.meta.env.openAI_key;
+const openAI_key = import.meta.env.API_KEY;
 export const analyzeResume = async(resumeText) => {
     try {
         const res = await axios.post(`https://api.openai.com/v1/chat/completions`,{
